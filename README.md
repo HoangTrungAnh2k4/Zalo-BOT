@@ -115,6 +115,8 @@ docker run -d --name zalo-bot --env-file .env -p 8000:8000 -v zalo-data:/app/dat
 # hoặc chạy polling:
 docker run -d --name zalo-bot --env-file .env -v zalo-data:/app/data zalo-chia-tien python -m app.polling
 ```
+Hoặc dùng image dựng sẵn thay cho `docker build`: `ghcr.io/hoangtrunganh2k4/zalo-bot:latest`.
+
 Có thể deploy lên Railway, Render, Fly.io hoặc VPS. Nhớ gắn ổ đĩa (volume) vào `/app/data` để không mất dữ liệu.
 
 ### Sao lưu dữ liệu
